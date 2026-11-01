@@ -1,0 +1,43 @@
+Create table student (
+sID Number (4),
+Sname Varchar (50),
+  sAge number (3),
+  scourse Varchar (100),
+  scollege Varchar (100)
+);
+
+2. Insert tuples
+insert into student values (1, 'Sangay', 46, 'MCA (DS)', 'Amity');
+insert into student values (2, 'Dorji', 22, 'MCA (DS)', 'IIT, Delhi');
+insert into student values (3, 'Gurung', 25, 'MCA (AI)', 'NIT, Rourkela');
+insert into student values (4, 'Karma', 24, 'MCA (Cyber Security)', 'Amity');
+insert into student values (5, 'Chandra Kriti', 32, 'MCA (DS)', 'NIT Warangle');
+insert into student values (6, 'Shanti Deva', 27, 'MCA (DS)', 'IIT Madras');
+
+--Column Addition
+Alter Table Student
+ADD Location varchar;
+
+--Update
+Update Student  
+Set Location = 'Faridabad' where sID=1;
+
+Update Student  
+Set scourse = 'MCA';
+
+Select * From Student Order by Sname; 
+
+Select sname, sid from student order by Sname, sid ASC;
+
+Select distinct scourse from Student;
+
+Select Sname, scourse from student where location is null;
+
+
+
+SELECT * FROM Student LIMIT 3;
+
+select * from student where sname like 's%';
+
+Select * from student where location like 'F______a%';
+
