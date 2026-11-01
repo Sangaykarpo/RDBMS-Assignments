@@ -1,0 +1,14 @@
+--Create Table 
+CREATE TABLE Employee (
+   EmpID NUMBER(3),
+  EmpName VARCHAR2(20),
+  empAge Number (3),
+empDOB DOB
+);
+
+--Insert
+INSERT into employee values(100, 'Ram', 26, 1980-01-01);
+INSERT into employee values(101, 'Kumar', 25, 1981-01-01);
+INSERT into employee values(102, 'Das', 24, 1982-01-01);
+INSERT into employee values(104, 'Raj', 26, 1980-01-01);
+
